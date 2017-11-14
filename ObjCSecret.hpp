@@ -1,5 +1,5 @@
 // ObjCSecret v1.0
-// Copyright (C) Manuel Sainz de Baranda y Goñi.
+// Copyright (C) 2017 Manuel Sainz de Baranda y Goñi.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -35,7 +35,7 @@
 
 
 template <size_t I> class ObjCSecretCharacter : public ObjCSecretCharacter<I - 1> {
-	protected:
+	private:
 	char _value;
 
 	public:
