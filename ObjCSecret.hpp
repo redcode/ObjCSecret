@@ -19,8 +19,8 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-#ifndef __ObjCSecret_HPP__
-#define __ObjCSecret_HPP__
+#ifndef _ObjCSecret_HPP_
+#define _ObjCSecret_HPP_
 
 #ifndef OBJC_SECRET_KEY
 #	define OBJC_SECRET_KEY 0x7766554433221100
@@ -93,4 +93,4 @@ template <size_t S> class ObjCSecret : ObjCSecretCharacter<S> {
 
 #define OBJC_SECRET(name) ObjCSecret<sizeof(#name) - 1>(#name)
 
-#endif // __ObjCSecret_HPP__
+#endif // _ObjCSecret_HPP_
